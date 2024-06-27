@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="text-align: center; color: #8a2be2;">Finalização do pedido</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #fff;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .container {
+    padding: 0px 50px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Tela Inicial</a>
+                </li>
+                <li>
+                    <a href="buycar.html">Compre seu carro</a>
+                </li>
+                <li>
+                    <a href="sellcar.html">Venda seu carro</a>
+                </li>
+                <li>
+                    <a href="services.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="help.html">Ajuda</a>
+                </li>
+            </ul>
+        </nav>
+    <h1 style="text-align: center; color: #fafafa;">Confirmação do Pagamento</h1>
+    <form action="/processar-pagamento" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="cartao">Cartão de Crédito:</label>
+        <input type="text" id="cartao" name="cartao" placeholder="Número do cartão" required>
+
+        <label for="forma-pagamento">Forma de Pagamento:</label>
+        <select id="forma-pagamento" name="forma-pagamento" required>
+            <option value="cartao">Cartão de Crédito</option>
+            <option value="boleto">Boleto Bancário</option>
+            <option value="paypal">PayPal</option>
+        </select>
+
+        <button type="submit">Finalizar Compra</button>
+    </form>
+</body>
+</html>
