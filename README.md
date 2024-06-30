@@ -1,9 +1,13 @@
-# WebAutomoveis
-
 README - Projeto Venda de Automóveis
+
+REPOSITORIO DOS ARQUIVOS COMPLETO COM IMAGENS NO GITHUB https://github.com/CyberNinjaDev/Projeto-integrador-WebAutomoveis
+
+E Projeto publicado pelo host disponibilizado no GITHUB: https://cyberninjadev.github.io/Projeto-integrador-WebAutomoveis/index.html  
+
 Introdução
 
 Este projeto é uma aplicação web destinada à venda de automóveis. A aplicação permite que os usuários registrem seus veículos à venda, fornecendo informações detalhadas e imagens. Os compradores podem visualizar os veículos disponíveis e entrar em contato com os vendedores. Este guia fornecerá instruções detalhadas sobre como configurar e executar o projeto na sua máquina local.
+
 Pré-requisitos
 
     XAMPP ou WAMP instalado.
@@ -13,35 +17,34 @@ Estrutura do Projeto
 
     config.php: Arquivo de configuração para conexão com o banco de dados.
     vendaform.php: Script PHP para processar os dados do formulário e armazená-los no banco de dados.
-    index.html, buycar.html, sellcar.html, services.html, help.html: Páginas HTML para navegação.
+    index.html, buycar.html, sellcar.html: Páginas HTML para navegação.
     uploads/: Diretório para armazenar as imagens dos veículos.
     formulario_veiculo.sql: Arquivo SQL para importar a estrutura do banco de dados.
 
-Instruções de Instalação
+## Instruções de Instalação
 Passo 1: Instale o XAMPP ou WAMP
 
-Baixe e instale o XAMPP ou WAMP no seu computador:
+## Baixe e instale o XAMPP ou WAMP no seu computador:
 
-    XAMPP Download
-    WAMP Download
+   No meu caso fiz o dowload do XAMPP, após a instalação ative as opções APACHE e MySQL.
 
 Passo 2: Clone ou Baixe o Projeto
 
-Clone o repositório ou baixe o arquivo zip do projeto e extraia-o para o diretório htdocs do XAMPP (ou www do WAMP):
+## Clone o repositório ou baixe o arquivo zip do projeto e extraia-o para o diretório htdocs do XAMPP (ou www do WAMP):
 
 sh
 
-# Navegue até o diretório htdocs do XAMPP ou www do WAMP
+## Navegue até o diretório htdocs do XAMPP ou www do WAMP ##
 cd /c/xampp/htdocs/ # Para XAMPP
 # cd /c/wamp/www/ # Para WAMP
 
-# Clone o repositório ou copie os arquivos do projeto para este diretório
+## Clone o repositório ou copie os arquivos do projeto para este diretório ##
 
 Passo 3: Configure o Banco de Dados
 
-    Abra o phpMyAdmin acessando http://localhost/phpmyadmin.
-    Crie um novo banco de dados chamado formulario_veiculo.
-    Importe o arquivo formulario_veiculo.sql para o banco de dados criado:
+        Abra o phpMyAdmin acessando http://localhost/phpmyadmin.
+        Crie um novo banco de dados chamado formulario_veiculo.
+##      Importe o arquivo formulario_veiculo.sql para o banco de dados criado:
         Clique em "Importar".
         Selecione o arquivo formulario_veiculo.sql.
         Clique em "Executar".
@@ -69,13 +72,15 @@ if ($conn->connect_error) {
 
 Passo 5: Inicie o Servidor
 
-    Abra o XAMPP e inicie o Apache e o MySQL.
-        Para WAMP, também inicie o Apache e MySQL.
-    No navegador, acesse http://localhost/nome_do_projeto.
+
+        Com todos os arquivos baixados na pasta easy-portifolio
+        Abra o XAMPP e inicie o Apache e o MySQL.
+        Para WAMP, inicie os serviços Apache e MySQL.
+        No navegador, acesse localhost/easy-portifolio/index.html.
 
 Passo 6: Preencha e Envie o Formulário
 
-    Navegue até a página de venda de carros (http://localhost/nome_do_projeto/sellcar.html).
+    Navegue até a página de venda de carros (localhost/easy-portifolio/sellcar.html).
     Preencha os campos do formulário e envie para verificar se está funcionando corretamente.
     Verifique no phpMyAdmin se os dados foram armazenados corretamente na tabela venda.
 
@@ -98,4 +103,4 @@ CREATE TABLE venda (
 
 Conclusão
 
-Seguindo as instruções acima, você será capaz de configurar e executar o projeto de Venda de Automóveis na sua máquina local. Caso encontre algum problema, verifique as configurações e os logs do servidor para identificar possíveis erros. Este projeto oferece uma base sólida para expandir e adicionar novas funcionalidades daqui pra frente.
+Seguindo as instruções acima, você será capaz de configurar e executar o projeto de Venda de Automóveis na sua máquina local. Caso encontre algum problema, verifique as configurações e os logs do servidor para identificar possíveis erros. Este projeto oferece uma base sólida para expandir e adicionar novas funcionalidades no futuro.
