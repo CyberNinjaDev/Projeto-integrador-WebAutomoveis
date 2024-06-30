@@ -1,0 +1,28 @@
+Resenha sobre o Projeto de Venda de Automóveis
+
+Introdução
+
+O projeto de Venda de Automóveis é uma aplicação web desenvolvida com o objetivo de facilitar a compra e venda de veículos entre usuários. A aplicação permite que vendedores publiquem anúncios de automóveis à venda, enquanto compradores podem visualizar os veículos disponíveis e entrar em contato com os vendedores. O projeto utiliza HTML, CSS e PHP para a interface e a lógica do servidor, respectivamente, e o banco de dados MySQL para armazenamento dos dados.
+
+Estrutura do Projeto
+
+O projeto é composto por uma série de páginas web, sendo as principais a página inicial, a página de compra de carros, a página de venda de carros, uma seção de serviços e uma página de ajuda. Cada uma dessas páginas está interligada através de um menu de navegação intuitivo, permitindo ao usuário uma experiência de navegação fluida e amigável.
+
+A página de venda de automóveis é particularmente relevante, pois permite que os usuários registrem seus veículos à venda. O formulário de cadastro de veículos coleta informações essenciais como nome do vendedor, telefone de contato, modelo do carro, ano, preço, descrição e uma imagem do carro. Os dados são então enviados para um script PHP que os armazena em um banco de dados MySQL.
+
+Tecnologias Utilizadas
+
+    HTML e CSS: Utilizados para a estruturação e estilização das páginas web. O CSS customizado garante uma apresentação visual atraente, com um esquema de cores escuras que contrasta bem com os elementos de texto.
+    PHP: Empregado para a lógica do servidor, o PHP processa os dados enviados pelo formulário e interage com o banco de dados MySQL para armazenar as informações dos veículos.
+    MySQL: Banco de dados utilizado para armazenar as informações dos veículos cadastrados. A tabela venda contém campos essenciais como nome do vendedor, telefone, modelo, ano, preço, descrição e imagem.
+
+Desafios e Soluções
+
+Durante o desenvolvimento do projeto, surgiram alguns desafios, especialmente relacionados ao armazenamento e validação dos dados. Um problema específico foi a validação dos campos do formulário no PHP, que inicialmente não estava capturando corretamente todos os campos preenchidos. A solução envolveu a revisão e correção dos atributos name dos inputs HTML e a implementação de mensagens de debug no PHP para garantir que todos os dados estavam sendo recebidos corretamente.
+
+Outro desafio foi o gerenciamento de uploads de imagens. Foi necessário garantir que apenas imagens com extensões permitidas (jpg, png, gif, jpeg) fossem aceitas e que os arquivos fossem movidos corretamente para o diretório uploads. Essa funcionalidade foi crucial para permitir que os anúncios dos veículos fossem acompanhados de imagens, o que melhora significativamente a experiência do usuário.
+Conclusão
+
+O projeto de Venda de Automóveis exemplifica uma aplicação web funcional que integra várias tecnologias para oferecer uma plataforma útil tanto para compradores quanto para vendedores de veículos. Através do uso de HTML, CSS, PHP e MySQL, foi possível desenvolver uma interface amigável e um sistema de backend robusto para gerenciar os anúncios dos veículos.
+
+A implementação cuidadosa das funcionalidades, aliada à resolução dos desafios encontrados, resultou em um produto final que atende aos requisitos propostos. O projeto serve como uma base sólida que pode ser expandida no futuro, com funcionalidades adicionais como filtros de busca avançada, integração com APIs de pagamento e recursos de segurança aprimorados.
