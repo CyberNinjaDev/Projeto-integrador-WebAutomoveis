@@ -1,1 +1,103 @@
-venda seu carro clicando aqui
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Automóveis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        form {
+            background-color: #6d6c6c;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .container {
+            padding: 0px 50px;
+        }
+        nav a:hover {
+            color: orange;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Tela Inicial</a>
+                </li>
+                <li>
+                    <a href="buycar.html">Compre seu carro</a>
+                </li>
+                <li>
+                    <a href="sellcar.html">Venda seu carro</a>
+                </li>
+                <li>
+                    <a href="services.html">Serviços</a>
+                </li>
+                <li>
+                    <a href="help.html">Ajuda</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Venda de Automóveis</h1>
+            <form action="vendaform.php" method="post" enctype="multipart/form-data">
+                <label for="nome">Nome do vendedor:</label>
+                <input id="nome" name="nome" required>
+
+                <label for="telefone">Telefone para contato:</label>
+                <input id="telefone" name="telefone" required>
+                
+                <label for="modelo">Modelo do Carro:</label>
+                <input type="text" id="modelo" name="modelo" required>
+
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" name="ano" required>
+
+                <label for="preco">Preço:</label>
+                <input id="preco" name="preco" required>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4"></textarea>
+
+                <label for="imagem">Imagem do Carro:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" required>
+
+                <button type="submit">Publicar Anúncio</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

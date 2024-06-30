@@ -1,1 +1,84 @@
-Nossos serviços financiamento e etc
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            color: rgb(37, 34, 34);
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.096);
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+        }
+        .title{
+            color: red;
+            font-size: 50px;
+        }
+        </style>
+<body>
+    <div class="title">
+        <b>SCV</b>
+    </div>
+    <b>Sistema de Cadastro de Veículos</b>
+    <br><br><br>
+    <div class="box">
+        <form action="cadastro.php" method="POST">
+            <fields>
+                <style>
+                    table {
+                        border-collapse: collapse;
+                        width: 50%;
+                        margin-bottom: 20px;
+                    }
+            
+                    table, th, td {
+                        border: 1px solid #ddd;
+                    }
+            
+                    th, td {
+                        padding: 6px;
+                        text-align: left;
+                    }
+            
+                    th {
+                        background-color: #f2f2f2;
+                    }
+                </style>
+            </head>
+            <body>
+            
+                <table>
+                    <tr>
+                        <th>Modelo do Veículo</th>
+                        <td><input type="text" name="modelo" required></td>
+                    </tr>
+                    <tr>
+                        <th>Fabricante do Veículo</th>
+                        <td><input type="text" name="fabricante" required></td>
+                    </tr>
+                    <tr>
+                        <th>Ano de Fabricação</th>
+                        <td><input type="text" name="ano" required></td>
+                    </tr>
+                    <tr>
+                        <th>Kilometragem/Km</th>
+                        <td><input type="text" name="km" required></td>
+                    </tr>
+                </table>
+            
+                <input type="submit" value="Enviar">
+            </form>
+            </fieldset>
+        </form>
+    </div>
+    <br><br>
+    
+</body>
+</html>
